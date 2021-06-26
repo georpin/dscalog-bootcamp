@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.resources;
+package com.devsuperior.dscatalog.controller;
 
 import java.net.URI;
 
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devsuperior.dscatalog.dto.CategoryDTO;
-import com.devsuperior.dscatalog.services.CategoryService;
+import com.devsuperior.dscatalog.service.CategoryService;
 
 @RestController
 @RequestMapping(value = "/categories")
-public class CategoryResource {
+public class CategoryController {
 
 	@Autowired
 	private CategoryService service;

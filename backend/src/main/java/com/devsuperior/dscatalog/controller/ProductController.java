@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.resources;
+package com.devsuperior.dscatalog.controller;
 
 import java.net.URI;
 
@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devsuperior.dscatalog.dto.ProductDTO;
-import com.devsuperior.dscatalog.services.ProductService;
+import com.devsuperior.dscatalog.service.ProductService;
 
 @RestController
 @RequestMapping(value = "/products")
-public class ProductResource {
+public class ProductController {
 
 	@Autowired
 	private ProductService service;

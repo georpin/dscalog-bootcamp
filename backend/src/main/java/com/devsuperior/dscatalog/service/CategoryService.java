@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.services;
+package com.devsuperior.dscatalog.service;
 
 import java.util.Optional;
 
@@ -15,8 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.devsuperior.dscatalog.dto.CategoryDTO;
 import com.devsuperior.dscatalog.entity.Category;
 import com.devsuperior.dscatalog.repository.CategoryRepository;
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.devsuperior.dscatalog.service.exception.DatabaseException;
+import com.devsuperior.dscatalog.service.exception.ResourceNotFoundException;
 
 @Service
 public class CategoryService {

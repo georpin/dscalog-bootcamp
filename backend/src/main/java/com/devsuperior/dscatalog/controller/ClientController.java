@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.resources;
+package com.devsuperior.dscatalog.controller;
 
 
 import java.net.URI;
@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.devsuperior.dscatalog.dto.ClientDTO;
-import com.devsuperior.dscatalog.services.ClientService;
+import com.devsuperior.dscatalog.service.ClientService;
 
 @RestController
 @RequestMapping(value = "/clients")
-public class ClientResource {
+public class ClientController {
 
 	@Autowired
 	private ClientService service;
