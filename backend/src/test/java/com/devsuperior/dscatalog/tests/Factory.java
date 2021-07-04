@@ -12,7 +12,7 @@ public class Factory {
 		var product = new Product (1L, "Iphone", "Iphone muito caro", 4170.0, 
 			"https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/25-big.jpg",
 			Instant.parse("2020-07-14T10:00:00Z"));
-		product.getCategories().add(new Category(2L, "Electronics"));
+		product.getCategories().add(createCategory());
 		return product;
 	}
 	
@@ -20,5 +20,10 @@ public class Factory {
 		var product = createProduct(); 
 		return new ProductDTO(product, product.getCategories());
 	}
+	
+	public static Category createCategory() {
+		return new Category(2L, "Electronics");
+	}
+	
 
 }
